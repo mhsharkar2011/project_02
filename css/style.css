@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clr{
+    clear: both;
+}
+/*===========================================
+                Reuseable CSS Start
+============================================*/
+.title{
+    margin: 60px 0;
+}
+/*===========================================
+                Reuseable CSS End
+============================================*/
+/*===========================================
+                Header Part Start
+============================================*/
+/* .main_div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main_div .child1{
+    height: 300px;
+    width: 10%;
+    background: red;
+}
+.main_div .child2{
+    height: 300px;
+    width: 20%;
+    background: rgb(68, 0, 255);
+}
+.main_div .child3{
+    height: 300px;
+    width: 30%;
+    background: rgb(9, 255, 0);
+} */
+
+
+header{
+    background: #0872b9;
+    padding: 8px 0;
+}
+header  .header-left{  
+    color: #e7e7e7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+header .header-right{
+    text-align: right;
+    padding-right: 20px;
+}
+header .header-right a{
+    color: #e7e7e7;
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 25px;
+}
+header  .header-right a:hover{
+    color:#353535
+}
+/*===========================================
+                Header Part End
+============================================*/
+/*===========================================
+                Navbar Part Start
+============================================*/
+#navbar-menu{
+    display: flex;
+    flex-direction: column;
+    z-index: 999999;
+    width: 100%;
+    background:#F8F9FA;
+    padding: 10px 0;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #0872b9;
+}
+.sticky{
+    width: 100%;
+    position: fixed;
+    top: 0;  
+}
+/*===========================================
+                Navbar Part End
+============================================*/
+/*===========================================
+                Banner Part Start
+============================================*/
+#banner{
+    position: relative;
+}
+#banner .img-fluid{
+    width: 100%;
+}
+#banner .overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.459);   
+}
+#banner .overlay .overlay-details{
+    text-align: right;
+    margin-top: 80px;
+    color: #fff;
+}
+#banner .overlay .overlay-details h3{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+#banner .overlay .overlay-details h1{
+    font-size: 40px;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+#banner .overlay .overlay-details p{
+    width: 75%;
+    text-align: right;
+    display: inline-flex;
+}
+#banner .overlay .overlay-button{
+    margin-right: 40px;
+    margin-top: 40px;
+    background:transparent;
+}
+#banner .overlay .overlay-button .btn{
+    color: #fff;
+    border-radius: 0;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    width: 100px;
+}
+#banner .overlay .overlay-button .btn-outline-primary {
+    color: #fff;
+    border-color: #fff;
+    transition: all linear .5s;
+}
+#banner .overlay .overlay-button .btn-outline-primary:hover{
+    border-color: transparent;
+}
+/*===========================================
+                Banner Part End
+============================================*/
+
+/*===========================================
+                About Us Part Start
+============================================*/
+
+#aboutus-part .container .title{
+    position: relative;
+    text-align: center;
+}
+#aboutus-part .container .title img{
+    position:absolute ;
+    margin-left: -98px;
+    width: 120px;
+    height: 1px;
+}
+#aboutus-part .container .item{
+    display: flex;
+    flex-wrap: wrap;
+}
+#aboutus-part .container .item .item-images img{
+    height: 320px;
+}
+#aboutus-part .container .item-details{
+   
+}
+#aboutus-part .container .item-details p{
+    font-size: 14px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    color: #555555;
+    text-align: justify;
+    padding:40px 40px 0 0 ;
+}
+/*===========================================
+                About Us Part End
+============================================*/
+
+/*===========================================
+                Services Part Start
+============================================*/
+#services-part .container .title{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+#services-part .container .title img{
+    position: absolute;
+    margin-left: -130px;
+    width: 120px;
+    height: 1px;
+}
+#services-part .container .item{
+    background:#ddd;
+    transition: .4s;
+    position: relative;
+    margin-bottom: 60px;
+}
+#services-part .container .item h2 {
+    top: 70px;
+    left: 30%;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+#services-part .container .item p{
+    padding:20px;
+    text-align: center;
+}
+#services-part .container .item:hover {
+    box-shadow: -1px 1px 10px 1px rgba(115,111,115,1);
+}
+#services-part .container .round{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    position: relative;
+
+}
+#services-part .container .round .border-round{
+    width: 90px;
+    height: 90px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+#services-part .container .item:hover .border-round{
+    border-color: #5bc5f4;
+    transition: .4s;
+}
+#services-part .container .round .border-round .inner-round{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ddd;
+    position: absolute;
+}
+#services-part .container .item:hover .inner-round{
+    background-color: #5bc5f4;
+    transition: .4s;
+}
+#services-part .container .round .border-round .inner-round img{
+    width: 40px;
+    height: 40px;
+    transform: translate(55%, 55%);
+}
+/*===========================================
+                Services Part End
+============================================*/
+
+/*===========================================
+                Our Portfolio Part Start
+============================================*/
+#portfolio-part .container .title{
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+#portfolio-part .container .title img{
+    position: absolute;
+    margin-left: -150px;
+    width: 120px;
+    height: 1px;
+}
+#portfolio-part .container .item-images{
+    position: relative;
+    margin-top: 22px;
+}
+#portfolio-part .container .item-images img{
+    width: 100%;
+}
+#portfolio-part .container .item-images .overlay{
+    width: 0%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear .5s;
+}
+#portfolio-part .container .item-images:hover .overlay{
+    opacity: .6;
+    width: 100%;
+}
+#portfolio-part .container .item-images  .overlay-icon a{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background:#5bc5f4;
+    top: 0;
+    left: 40%;
+    transform: translateY(250%);
+    position: absolute;
+    transition: all linear .5s;
+}
+#portfolio-part .container .item-images  .overlay-icon a i{
+    line-height: 45px;
+    position: absolute;
+    top: 0;
+    left: 33%;
+    color: #fff;
+}
+#portfolio-part .container .item-images  .overlay-icon a:hover{
+    background:orange;
+}
+/*===========================================
+                Our Portfolio Part End
+============================================*/
+
+/*===========================================
+                Our Team Part Start
+============================================*/
+#team-part{
+    margin: 40px 0;
+}
+#team-part .container .title {
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+#team-part .container .title img {
+    position: absolute;
+    margin-left: -98px;
+    width: 120px;
+    height: 1px;
+}
+#team-part .item .item-details img{
+    width: 100%;
+}
+#team-part .item-details{
+    position: relative;
+    
+}
+#team-part .item-details:hover{
+    box-shadow: -1px 1px 10px 1px rgba(115,111,115,1);
+}
+#team-part .item .item-details .overlay{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    transition:all linear .5s;
+}
+#team-part .item .item-details .overlay:hover {
+    width: 35%;
+    opacity: 1;
+}
+#team-part .item .item-details .overlay .overlay-icon{
+    margin-top: 45px;
+}
+#team-part .item .item-details .overlay a {
+    font-size: 20px;
+    font-weight: 300;
+    border: 1px solid #fff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+}
+#team-part .item .item-details .overlay a:hover{
+    background: #5bc5f4;
+    border-color: #5bc5f4;
+}
+#team-part .item .item-details .overlay a i {
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+}
+#team-part .item .item-text h1{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+}
+#team-part .item .item-text h1:hover{
+    color: #5bc5f4;
+}
+#team-part .item .item-text h3{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    color: #555555;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*===========================================
+                Our Team Part End
+============================================*/
+
+/*===========================================
+                Testimonial Part Start
+============================================*/
+#testimonial-part{
+    margin:40px 0;
+    margin-bottom: 60px;
+}
+#testimonial-part .container .title{
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
+}
+#testimonial-part .container .title img{
+    position: absolute;
+    margin-left: -125px;
+    width: 120px;
+    height: 1px;
+}
+#testimonial-part .item .item-round{
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+#testimonial-part .item .item-round img{
+    margin: 0 auto;
+}
+#testimonial-part .item .item-details{
+    width: 100%;
+    background: #f1f1f1;
+    padding: 20px;
+    position: relative;
+}
+#testimonial-part .item .item-details .item-shape{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    height: 50px;
+    width: 50px;
+    background: #f1f1f1;
+    top: 0;
+    left: 45%;
+    transform:translateY(-50%);
+    position: absolute;
+}
+#testimonial-part .item .item-details .rating{
+    margin-left:200px;
+    line-height: 30px;
+}
+#testimonial-part .item .item-details .rating a i{
+    color: #5bc5f4;
+}
+#testimonial-part .item .item-details h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Oswald',sans-serif;
+    text-transform: uppercase;
+}
+#testimonial-part .item .item-details h5{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300px;
+    color: #555555;
+    font-family: 'Oswald',sans-serif;
+    text-transform:capitalize;
+}
+#testimonial-part .item .item-details p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300px;
+    color: #555555;
+    font-family: 'Oswald',sans-serif;
+    text-transform:capitalize;
+    margin-top: 20px;
+    line-height: 25px;
+}
+/*===========================================
+                Testimonial Part End
+============================================*/
+/*===========================================
+                Footer Part Start
+============================================*/
+#footer-part{
+    background: #353535;
+    color: #fff;
+}
+#footer-part .item .item-logo{
+    margin:30px 0;
+    color: #fff;
+}
+#footer-part .item .item-title{
+    display: flex;
+
+}
+#footer-part .item .item-details{
+    margin-bottom: 25px;
+    display: flex;
+}
+#footer-part .item .item-title h1{
+    margin:30px 0;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Oswald',sans-serif;
+    text-align: center;
+    text-transform:capitalize;
+}
+#footer-part .item .item-details .item-icon{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #5bc5f4;
+    border-radius: 50%;
+    background:#5bc5f4;
+    padding: 10px;
+}
+#footer-part .item .item-details .item-icon i{
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+#footer-part .item .item-details p{
+    margin-left: 20px;
+}
+#footer-part .item .item-details ul{
+    margin-left: -30px;
+}
+#footer-part .item .item-details ul li{
+    padding: 6px;
+}
+#footer-part .item .item-details ul li a{
+    color: #fff;
+}
+#footer-part .item .item-details ul li a:hover{
+    color: #5bc5f4;
+}
+#footer-part .item .item-details .item-images img{
+    margin-right:10px;
+    margin-bottom: 10px;
+}
+/*===========================================
+                Footer Part End
+============================================*/
+/*===========================================
+                Copyright Part Start
+============================================*/
+#copyright-part {
+    /* margin-bottom: 20px; */
+    background: #555555;
+    padding: 10px;
+    color: #fff;
+}
+#copyright-part .text{
+    color: #fff;
+    text-align: center;
+}
+#copyright-part .text a{
+    color: #5bc5f4;
+}
+/*===========================================
+                Copyright Part End
+============================================*/
